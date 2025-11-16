@@ -1,17 +1,15 @@
-# File: mqtt_pub.py
 import paho.mqtt.client as mqtt
 import time
 
-# --- Cấu hình MQTT (Theo yêu cầu) ---
-MQTT_BROKER = "localhost"
+#MQTT_BROKER = "localhost"
+MQTT_BROKER = "192.168.18.129"
 MQTT_PORT = 1883
 
-# ĐỊNH NGHĨA HÀM PHẢI NHƯ THẾ NÀY:
 def publish_mqtt(topic, message, broker=MQTT_BROKER, port=MQTT_PORT):
     """
     Kết nối đến MQTT broker, gửi một tin nhắn và ngắt kết nối.
     """
-    client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION1)
+    client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION1, client_id="1256")
     try:
         print(f"\nĐang kết nối đến MQTT Broker {broker}:{port}...")
         client.connect(broker, port, 60)

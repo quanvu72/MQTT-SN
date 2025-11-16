@@ -1,9 +1,9 @@
 from paho.mqtt import client as mqtt
 import asyncio
 
-
+#broker = "localhost"
 broker = "192.168.18.129"
-data_test = "green_on"
+data_test = "blue_on"
 
 client = mqtt.Client(client_id="1236", clean_session=True)
 client.connect(broker, 1883)

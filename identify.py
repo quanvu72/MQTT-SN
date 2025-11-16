@@ -33,7 +33,7 @@ def check_plates_in_whitelist(detected_clean_plates, whitelist_path):
         print("Không có biển số nào phát hiện được trùng với file whitelist.")
         return None
     except FileNotFoundError:
-        print(f"LỖI: Không tìm thấy file whitelist '{whitelist_path}'.")
+        print(f"Lỗi: Không tìm thấy file whitelist '{whitelist_path}'.")
         return None
     except Exception as e:
         print(f"Lỗi khi đọc file whitelist: {e}")

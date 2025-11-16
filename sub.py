@@ -1,6 +1,7 @@
 from paho.mqtt import client as mqtt
 
-BROKER = "localhost"
+#BROKER = "localhost"
+BROKER = "192.168.18.129"
 PORT = 1883
 TOPIC = "#"
 
