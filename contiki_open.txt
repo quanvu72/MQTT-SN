@@ -1,0 +1,7 @@
+/home/user/contiki-3.0/vnaq/mqtt-sn/rpl-border-router
+
+make connect-router-cooja
+
+/home/user/contiki-3.0/vnaq/mqtt-sn/tools/mosquitto.rsmb/rsmb/src
+
+sudo ./broker_mqtts config.mqtt
